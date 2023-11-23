@@ -1,9 +1,8 @@
-const PORT = 3015;
+import { environment } from "src/environments/environment.prod";
 
-export const SERVER_URL = "http://campus.saplynx.com";
-export const LOCAL_SERVER_URL = `http://localhost:${PORT}`;
+export let SERVER_URL: string = environment.apiUrl;
 
-export const SOCKET_CONNECTION_URL = "http://campus/saplynx.com";
+export const SOCKET_CONNECTION_URL = environment.apiUrl;
 export const APP_VERSION = "1";
 
 
