@@ -1,0 +1,265 @@
+.navbar{
+  background-color: #ffffff1c;
+  height: 40px;
+  padding-top: 18px;
+}
+
+.menu {
+  list-style: none;
+  display: inline;
+  align-items: center;
+  float: right;
+}
+
+.menu:first-child {
+  float: left;
+  font-size: large;
+  color: #DEA614;
+  font-weight: 600;
+}
+
+#user-profile-photo{
+  height: 16px;
+  margin-right: 8px;
+}
+.user-icon{
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  margin-right: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* hero image */
+#hero{
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* services */
+
+.data-container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+.services-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.service-card{
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: 200px;
+  margin-right: 1.7rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-card:last-child{
+  margin-right: 0rem;
+}
+
+.service-name{
+  margin-top: 15px;
+}
+
+#left-arrow{
+  margin-right: 1.7rem;
+}
+
+
+/* HouseHub services */
+
+#services-heading-2{
+  display: flex;
+  width: 72svw;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 600;
+}
+
+.right-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+}
+
+.househub-card{
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
+
+.househub-icon{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.star{
+  height: 15px;
+  width: 150px;
+}
+
+.house-info{
+  max-width: 170px;
+  font-size: 12px;
+  padding: 15px;
+  background-color: #F6F6F6;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.stars{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.price-and-furnished{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.furnished{
+  padding: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #F8EDED;
+  border-radius: 15px;
+}
+
+.boys-girls-tag{
+  font-size: 12px;
+  color: grey;
+  font-weight: 500;
+}
+
+.description{
+  margin-top: 2px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.owner-name{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.486);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* foodhub listing styles goes here  */
+
+.food-card{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  max-height: 300px;
+  line-height: 17px;
+  background-color: #F6F6F6;
+  border-radius: 6px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.food-aligner{
+  display: flex;
+  justify-content: center;
+}
+
+#food{
+  max-width: 150px;
+  margin-top: 15px;
+}
+
+.thali-haeding{
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#heading-text{
+  display: flex;
+  justify-content: space-between;
+}
+
+#limited-or-unlimited{
+  font-size: 8px;
+  text-transform: lowercase;
+  padding: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #F8EDED;
+  border-radius: 15px;
+  display: inline;
+}
+
+#thali-description{
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: grey;
+  font-weight: 500;
+}
+
+.serve-by{
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+#mess-name{
+  font-size: 13px;
+  color: #D9984D;
+}
+
+/* buy and sell */
+
+.user-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#user-name{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* campus events */
+
+.event-card{
+  line-height: 1.3rem;
+}
