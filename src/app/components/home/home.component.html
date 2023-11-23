@@ -1,5 +1,5 @@
 <div class="navbar">
-  <ul class="menu">
+  <ul class="menu logo" (click)="reLoadHome()">
     Campus
   </ul>
   <ul class="menu right user-icon" (click)="goToLoginPage()"><img hidden src="assets/icons/user-icon.svg" alt="" id="user-profile-photo">LogIn / SignUp
@@ -7,7 +7,7 @@
   <ul class="menu right">SERVICES</ul>
   <ul class="menu right">ABOUT US</ul>
 </div>
-<img src="assets/icons/campus.svg" alt="" id="hero">
+<img src="assets/icons/campus.svg" loading="lazy" alt="" id="hero">
 
 <!-- services container -->
 
@@ -19,15 +19,15 @@
   <!-- service cards -->
   <div class="services-container">
     <img src="assets/icons/left-arrow.svg" id="left-arrow" alt="">
-    <div class="service-card" (click)="gotToHousehub()">
+    <div class="service-card" (click)="gotToHub('househub')">
       <img src="assets/icons/home.svg" alt="" class="service-image">
       <p class="service-name">Househub</p>
     </div>
-    <div class="service-card">
+    <div class="service-card" (click)="gotToHub('foodhub')">
       <img src="assets/icons/thali.svg" alt="" class="service-image">
       <p class="service-name">FoodHub</p>
     </div>
-    <div class="service-card">
+    <div class="service-card" (click)="gotToHub('househub')">
       <img src="assets/icons/buy-sell.svg" alt="" class="service-image">
       <p class="service-name">Buy And Sell</p>
     </div>

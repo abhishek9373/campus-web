@@ -9,6 +9,7 @@
   display: inline;
   align-items: center;
   float: right;
+  cursor: pointer;
 }
 
 .menu:first-child {
