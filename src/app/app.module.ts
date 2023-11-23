@@ -8,7 +8,7 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { UserService } from './services/user.service';
 import { HomeComponent } from './components/home/home.component';
-import { LoginPageComponent } from './components/login-page/login-page.component';
+import { LoginPageComponent } from './modules/authentication/components/login-page/login-page.component';
 
 @NgModule({
   declarations: [

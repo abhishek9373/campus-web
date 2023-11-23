@@ -1,0 +1,139 @@
+
+
+
+/* navbar */
+.navbar{
+  background-color: white;
+  height: 40px;
+  padding-top: 18px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.menu {
+  list-style: none;
+  display: inline;
+  align-items: center;
+  float: right;
+}
+
+.menu:first-child {
+  float: left;
+  font-size: large;
+  color: #DEA614;
+  font-weight: 600;
+}
+
+#user-profile-photo{
+  height: 16px;
+  margin-right: 8px;
+}
+.user-icon{
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  margin-right: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* hero image */
+#hero{
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6rem;
+  padding: 30px;
+  color: black;
+  font-weight: 500;
+}
+
+.info-edit{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container{
+  display: flex;
+  height: 73vh;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.options-container{
+  color: black;
+  position: relative;
+  top: 30px;
+  left: 2rem;
+  line-height: 4rem;
+  background-color: #ECF1F6;
+  width: 180px;
+  padding-left: 2rem;
+  max-height: 60vh;
+  border-radius: 4px;
+}
+
+.action-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  padding: 10px;
+  padding-left: 2rem;
+  color: black;
+  line-height: 2.2rem;
+}
+
+input{
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border: 1.5px solid grey;
+  border-radius: 3px;
+  padding: 3px;
+}
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #37718E;
+  color: white;
+  height: 33px;
+}
+
+#name{
+  max-width: 300px;
+}
+
+#gender{
+  width: 100px;
+}
+
+#mobile{
+  width: 170px;
+}
+
+#otp{
+  width: 70px;
+}
+
+#branch{
+  width: 150px;
+}
+
+#birthdate{
+  width: 200px;
+}
+
+#college{
+  width: 250px;
+}
