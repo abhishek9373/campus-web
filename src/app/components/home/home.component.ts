@@ -25,6 +25,9 @@ export class HomeComponent implements OnInit{
         this.user = null;
       }
     });
+
+    this.scrollToTop();
+
   }
 
   // navigate to login Page
@@ -33,11 +36,25 @@ export class HomeComponent implements OnInit{
   }
 
   // navigate to househub Page
-  gotToHousehub(){
+  gotToHub(hub: string){
     if(this.user){
-      this.router.navigate(['/househub'])
+      this.router.navigate([`/${hub}`]);
     }else{
-      this.router.navigate(['/foodhub']);
+      this.router.navigate([`/${hub}`]);
     }
   }
+
+  //refresh Page
+  reLoadHome(){
+    window.location.reload();
+  }
+
+  scrollToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
 }
