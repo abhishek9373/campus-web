@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { UserService } from './services/user.service';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     LoadingComponent,
-    NotificationComponent
+    NotificationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
