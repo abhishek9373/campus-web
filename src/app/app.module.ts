@@ -9,6 +9,9 @@ import { NotificationComponent } from './components/notification/notification.co
 import { UserService } from './services/user.service';
 import { HomeComponent } from './components/home/home.component';
 import { LoginPageComponent } from './modules/authentication/components/login-page/login-page.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HttpErrorInterceptor } from './interceptors/http-error.interceptor';
+import { HttpErrorHandlingService } from './services/http-error-handling.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,18 @@ import { LoginPageComponent } from './modules/authentication/components/login-pa
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [UserService],
+  providers: [
+    UserService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpErrorInterceptor,
+      multi: true,
+    },
+    HttpErrorHandlingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
