@@ -1,4 +1,4 @@
-import { environment } from "src/environments/environment.prod";
+import { environment } from "src/environments/environment";
 
 export let SERVER_URL: string = environment.apiUrl;
 
